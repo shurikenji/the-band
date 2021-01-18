@@ -1,0 +1,371 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input {
+    padding: 8px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+/* Common */
+
+.button {
+    margin-bottom: 16px;
+    margin-left: 16px;
+    padding: 12px 19px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+.button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.mt-4 {
+    margin-top: 4px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+   padding: 0 8px;
+   float: left;
+}
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.33333%;
+}
+
+.col-1 {
+    width: 100%;
+}
+/* Main  */
+
+.header {
+    height: 46px;
+    background-color: #000000;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .nav {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.header .nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.header > .nav > li > a{
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 14.5px 24px;
+    text-transform: uppercase;
+    margin-right: -4px;
+}
+
+.header > .nav > li:hover > a {
+    color: #000000;
+    background-color: #cccccc;
+
+}
+
+.header .nav .subnav {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.6);
+    display: none;
+}
+
+.header .nav li:hover .subnav {
+    display: block;
+}
+
+.nav .icon {
+    font-size: 10px;
+}
+
+.subnav li {
+    width: 100%;
+    display: inline-block;
+}
+
+.subnav li:hover a {
+    color: #000000;
+    background-color: #cccccc;
+}
+
+.nav .subnav li a {
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 11px 64px 11px 16px;
+    display: inline-block;
+}
+
+.header .search {
+    float: right;
+    display: inline-block;
+    color: #fff;
+    padding: 14.5px 23px;
+}
+
+.header .search:hover {
+    background-color: #f44338;
+}
+
+/* End Header */
+
+/* Begin Slider  */
+.slider {
+    margin-top: 46px;
+    position: relative;
+    padding-top: 50%;
+    background-image: url(/assets/img/slide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider .place {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 47px;
+    color: white;
+}
+
+.slider .place .sub-heading {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.slider .place .heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* End Slider  */
+
+/* Begin Content  */
+.content {
+    
+}
+
+.content-item {
+    padding: 64px 16px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.content-item .content-heading {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 25px 0;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.content-item .content-sub-heading {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.content .content-des {
+    text-align: justify;
+    line-height: 1.4;
+    
+}
+
+.content .members-list {
+    padding: 32px 0;
+    text-align: center;
+}
+
+
+.content .member-img {
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+.content .name {
+    margin: 15px 0;
+}
+
+/* Begin Tour  */
+
+.tour {
+    background-color: #000000;
+    color: #fff;
+
+}
+
+.content-item .tickets-list {
+    background-color: #fff;
+    color: #757575;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.content-item .tickets-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    line-height: 1.5;
+}
+
+.content-item .tickets-list li .sold-out {
+    margin-left: 16px;
+    padding: 2px 8px;
+    background-color: #f44339;
+    color: #ffffff;
+}
+
+.content-item .tickets-list li .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    margin-right: 16px;
+}
+
+.content-item .places-list {
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 32px;
+}
+
+.content-item .places-list .place-item {
+    background: #ffffff;
+    background-clip: content-box;
+}
+
+.places-list .place-item .place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-item p {
+    margin: 15px 16px;
+
+}
+
+.place-item .place-name {
+    font-weight: 600;
+}
+
+.place-item .place-date {
+    opacity: 0.6;
+
+}
+
+
+/* Begin Contact  */
+.content-item .info {
+    padding: 32px 0;
+}
+
+.content-item .info p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.content-item .info p .icon {
+    font-size: 18px;
+    width: 30px;
+    display: inline-block;
+    line-height: 1.4;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.map-img{
+    filter: grayscale(50%);
+}
+
+.map-img img {
+    width: 100%;
+}
+
+
+/* End Content  */
+
+/* Begin footer */
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer a {
+    color: #000;
+}
+
+.footer i[class*="ti-"] {
+    font-size: 23px;
+}
+
+.footer a:hover {
+    opacity: 0.6;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+
+}
+
+.footer .copyright a {
+    text-decoration: underline;
+}
